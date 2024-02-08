@@ -1,0 +1,18 @@
+.books {
+  &__filter {
+    width: 20%;
+  }
+
+  &__content {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+
+.book-item {
+  width: 30%;
+  padding: 3%;
+  div {
+    padding: 5%;
+  }
+}

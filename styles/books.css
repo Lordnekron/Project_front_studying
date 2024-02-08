@@ -1,0 +1,15 @@
+.books__filter {
+  width: 20%;
+}
+.books__content {
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.book-item {
+  width: 30%;
+  padding: 3%;
+}
+.book-item div {
+  padding: 5%;
+}/*# sourceMappingURL=books.css.map */
