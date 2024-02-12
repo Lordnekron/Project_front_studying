@@ -99,24 +99,20 @@
             </svg>
           </div>
           <div class="panel__content__cart block">
-            <div>
-              <a href=""
-                ><img src="" alt="" />
-                <p>Account</p></a
-              >
-            </div>
-            <div>
-              <a href=""
-                ><img src="" alt="" />
-                <p>Cart:(0$)</p></a
-              >
-            </div>
-            <div>
-              <a href=""
-                ><img src="" alt="" />
-                <p>Wishlist</p></a
-              >
-            </div>
+            <button class="btn btn__nav btn__nav--sm-text">
+              <img src="" alt="" />
+              <p>Account</p>
+            </button>
+
+            <button class="btn btn__nav btn__nav--sm-text cart__button">
+              <img src="" alt="" />
+              <p class="cart__button__text">Cart:</p>
+            </button>
+
+            <button class="btn btn__nav btn__nav--sm-text">
+              <img src="" alt="" />
+              <p>Wishlist</p>
+            </button>
           </div>
         </div>
       </div>
@@ -236,8 +232,15 @@
       <div></div>
       <div></div>
     </section>
+    <div id="template" style="display: none">
+      <div id="template_content"></div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="/js/index.js"></script>
+    <script type="module" src="/js/cart.js"></script>
   </body>
 </html>

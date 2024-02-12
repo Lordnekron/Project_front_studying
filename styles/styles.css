@@ -132,6 +132,19 @@ button {
   overflow: hidden;
 }
 
+.cart__element {
+  margin-top: 10px;
+}
+.cart__element img {
+  margin-right: 5px;
+}
+.cart__element p {
+  margin-right: 5px;
+}
+.cart__element span {
+  text-wrap: nowrap;
+}
+
 .slide img {
   border-radius: 20px;
   margin-bottom: 20px;
@@ -170,6 +183,14 @@ button {
   background: none;
   border: none;
   padding: 0 30px;
+}
+.btn__nav--sm-text {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn__nav--light {
+  color: #bcbcbc;
 }
 .btn__nav:not(:last-child) {
   border-right: 1px #d1d1d1 solid;

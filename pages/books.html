@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/books.css" />
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css"
+    />
     <title>Books</title>
   </head>
   <body>
@@ -96,24 +100,20 @@
             </svg>
           </div>
           <div class="panel__content__cart block">
-            <div>
-              <a href=""
-                ><img src="" alt="" />
-                <p>Account</p></a
-              >
-            </div>
-            <div>
-              <a href=""
-                ><img src="" alt="" />
-                <p>Cart:(0$)</p></a
-              >
-            </div>
-            <div>
-              <a href=""
-                ><img src="" alt="" />
-                <p>Wishlist</p></a
-              >
-            </div>
+            <button class="btn btn__nav btn__nav--sm-text">
+              <img src="" alt="" />
+              <p>Account</p>
+            </button>
+
+            <button class="btn btn__nav btn__nav--sm-text cart__button">
+              <img src="" alt="" />
+              <p class="cart__button__text">Cart:</p>
+            </button>
+
+            <button class="btn btn__nav btn__nav--sm-text">
+              <img src="" alt="" />
+              <p>Wishlist</p>
+            </button>
           </div>
         </div>
       </div>
@@ -130,8 +130,15 @@
       <div class="block block--flex-column books__filter"></div>
       <div class="block books__content"></div>
     </section>
+    <div id="template" style="display: none">
+      <div id="template_content"></div>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="/libs/mixitup-3.3.1/dist/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
     <script type="module" src="/js/books.js"></script>
+    <script type="module" src="/js/cart.js"></script>
   </body>
 </html>
